@@ -23,3 +23,4 @@ path = r'./data/profile.jpg'
 img = read_image(path)
 vector = image_to_vector(img)
 print(vector.shape)
+
