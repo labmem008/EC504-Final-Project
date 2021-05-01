@@ -36,4 +36,5 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 3. https://docs.python.org/3/tutorial/venv.html
 4. https://storage.googleapis.com/openimages/web/index.html
 5. https://www.iloveimg.com/resize-image
+6. http://unsample.net/
 
