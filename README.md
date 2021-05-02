@@ -1,8 +1,14 @@
 # EC504-Final-Project Report
+
+
+
 ## Team information:
 Hanming Wang (hita@bu.edu) U29135433 scc-username: hita
 
 Yaopu Wang (yaopuw@bu.edu) U60843045 scc-username: yaopuw
+
+
+
 ## Abstract
 Locality-sensitive hashing and KD-Tree
 
@@ -10,8 +16,37 @@ It is prohibitive to apply any brute-force algorithm to searching problems these
 
 We plan to take advantage of the various third-party libraries of Python to implement the algorithms. We will implement LSH and KD-Tree. We will analyze their speed and accuracy and test them with an online database.
 
+
+
+## Installation & Run
+
+1. **pip install -r requirements.txt**
+
+   **pip3 install -r requirements.txt**
+
+2. **python main.py**
+
+
+
+## File Distribution
+
+- ##### LSH
+
+  folder 'lsh' contains all the functions
+
+- ##### KD-TREE
+
+  folder 'kdtree' contains all the functions
+
+- ##### helper functions
+
+  folder 'helper' contains all the helper functions
+
+
+
 ## Introduction to Locality Sensitive Hashing: Random Projection Method
 ### Idea behind this method
+
 Consider a image dataset matrix `D` with `n` vectors of size `d`. This database `D` can be projected onto a lower dimensional space with `n` vectors of size `k` using a random projection matrix.
 ### Algorithm
 We construct a table of all possible bins where each bin is made up of similar items. Each bin can be represented by a bitwise hash value so that two images with same bitwise hash values are more likely to be similar than those with different hashes.
@@ -25,11 +60,40 @@ Steps to generate a bitwise hash table (this is our `hash_table.py`):
 5. Group images with same hash values together to create a LSH table.
 
 
-In addition, because of the randomness, it is not likely that all similar items are grouped correctly. To overcome this limitaion, a common practice is to create multiple hash tables and consider an image `a` to be similar to image `b`, if they are in same bin in at least one of the tables. It is also worth noting that multiple tables generalize the high dimensional space better and amortize the contribution of bad random vectors.
+In addition, because of the randomness, it is not likely that all similar items are grouped correctly. To overcome this limitation, a common practice is to create multiple hash tables and consider an image `a` to be similar to image `b`, if they are in same bin in at least one of the tables. It is also worth noting that multiple tables generalize the high dimensional space better and amortize the contribution of bad random vectors.
 
-In practise, the number of hash tables and size of the hash value `k` are tuned to adjust the trade-off between recall and precision.
+In practice, the number of hash tables and size of the hash value `k` are tuned to adjust the trade-off between recall and precision.
 
 `lsh.py` contains construction of multiple hash tables.
+
+
+
+
+
+## KD-Trees
+
+#### Ideas behind KD-Trees
+
+In computer science, a k-d tree (short for k-dimensional tree) is a space-partitioning data structure for organizing points in a k-dimensional space. k-d trees are a useful data structure for several applications, such as searches involving a multidimensional search key (e.g. range searches and nearest neighbor searches) and creating point clouds. k-d trees are a special case of binary space partitioning trees.
+
+The algorithm is as such:
+
+- pick random dimension (X, Y...), find median, split data, repeat
+- find NNs for a point
+  - find region contain the point
+  - compare to all points in that region
+
+
+
+
+
+![k-d tree - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tree_0001.svg/370px-Tree_0001.svg.png)
+
+#### Library we used
+
+[`sklearn.neighbors`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.neighbors) provides functionality for unsupervised and supervised neighbors-based learning methods. Unsupervised nearest neighbors is the foundation of many other learning methods, notably manifold learning and spectral clustering. In the function we loop over all the data images and convert them into small vectors. The list of image vectors are passed into provided KD-TREE library to run. The final output contains the run time, closest distance and neighbor index. 
+
+
 
 ## Resources
 1. https://santhoshhari.github.io/Locality-Sensitive-Hashing/ *lsh*
@@ -41,4 +105,7 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 7. https://caesium.app/ *compress images*
 8. https://stackoverflow.com/questions/48121916/numpy-resize-rescale-image *cv2 resize*
 9. https://imagecyborg.com/ *download images*
+10. https://scikit-learn.org/stable/modules/neighbors.html KD-tree library
+11. [Scikit-learn: Machine Learning in Python](http://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html), Pedregosa *et al.*, JMLR 12, pp. 2825-2830, 2011.
+12. [API design for machine learning software: experiences from the scikit-learn project](https://arxiv.org/abs/1309.0238), Buitinck *et al.*, 2013.
 
