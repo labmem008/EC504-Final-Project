@@ -24,10 +24,16 @@ vectors = load_images_from_folder(path)
 # print(vectors[0].shape)
 # print(len(vectors[0]))
 
-table = ht.HashTable(5, 187500)
+table = ht.HashTable(10, 187500)
 for index, val in enumerate(vectors):
 	table.__setitem__(val, str(index))
+print("Generating Hash Table...")
 
 items = table.hash_table.items()
 for item in items:
 	print(item)
+
+print("Query item's hash value is:")
+
+result = table.__getitem__(vectors[31])
+print(result)

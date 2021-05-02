@@ -40,3 +40,5 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 6. http://unsample.net/ *image database*
 7. https://caesium.app/ *compress images*
 8. https://stackoverflow.com/questions/48121916/numpy-resize-rescale-image *cv2 resize*
+9. https://imagecyborg.com/ *download images*
+
