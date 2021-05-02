@@ -1,13 +1,15 @@
-# EC504-Final-Project
-## Project Proposal
-### Team members:
-Hanming Wang, Yaopu Wang
-### Project title:
-Locality-sensitive hashing and KD-Tree.
-### Background:
+# EC504-Final-Project Report
+## Team information:
+Hanming Wang (hita@bu.edu) U29135433 scc-username: hita
+
+Yaopu Wang (yaopuw@bu.edu) U60843045 scc-username: yaopuw
+## Abstract
+Locality-sensitive hashing and KD-Tree
+
 It is prohibitive to apply any brute-force algorithm to searching problems these days. In this project, we plan to research two classical types of algorithms. Locality-sensitive hashing is a technique that hashes similar input items into the same "buckets" with high probability. The K-dimensional tree is a space-partitioning data structure for organizing points in a k-dimensional space.
-### Goal:
+
 We plan to take advantage of the various third-party libraries of Python to implement the algorithms. We will implement LSH and KD-Tree. We will analyze their speed and accuracy and test them with an online database.
+
 ## Introduction to Locality Sensitive Hashing: Random Projection Method
 ### Idea behind this method
 Consider a image dataset matrix `D` with `n` vectors of size `d`. This database `D` can be projected onto a lower dimensional space with `n` vectors of size `k` using a random projection matrix.
@@ -38,3 +40,5 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 6. http://unsample.net/ *image database*
 7. https://caesium.app/ *compress images*
 8. https://stackoverflow.com/questions/48121916/numpy-resize-rescale-image *cv2 resize*
+9. https://imagecyborg.com/ *download images*
+

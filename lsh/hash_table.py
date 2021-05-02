@@ -1,5 +1,6 @@
 # https://santhoshhari.github.io/Locality-Sensitive-Hashing/
 import numpy as np
+import re
     
 class HashTable:
     def __init__(self, hash_size, inp_dimensions):
@@ -16,8 +17,11 @@ class HashTable:
         bools = (np.dot(inp_vector, self.projections.T) > 0).astype('int')
         # The join function joins all items in a tuple into a string,
         # using a ''(empty) character as separator
-        # return ''.join(bools.astype('str'))
-        return ''.join(str(bools))
+        temp = ''.join(str(bools))
+        # return ''.join(str(bools))
+        
+        return (re.sub("[^0-9]", "", temp))
+        # return bools
         # The resulting string is the hash value of size k (the bitwise hash value)
 
     def __setitem__(self, inp_vec, label):
@@ -26,10 +30,15 @@ class HashTable:
         # dictionary.get(keyname, value)
         # value: A value to return if the specified key does not exist.
         # list() creates a list. A list object is a collection which is ordered and changeable.
+        # print(hash_value.shape)
+        # print(hash_value)
+        # print(str(hash_value))
+        hash_value = int(hash_value, 2)
         self.hash_table[hash_value] = self.hash_table\
             .get(hash_value, list()) + [label]
         # Square brackets are lists, curly brackets are tuples. A list is mutable while tuples are not.
         
     def __getitem__(self, inp_vec):
         hash_value = self.generate_hash(inp_vec)
+        hash_value = int(hash_value, 2)
         return self.hash_table.get(hash_value, [])
