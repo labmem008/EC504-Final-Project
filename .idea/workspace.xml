@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f78ea933-abca-4ba0-b959-d62cec21f0fa" name="Default Changelist" comment="peter2" />
+    <list default="true" id="f78ea933-abca-4ba0-b959-d62cec21f0fa" name="Default Changelist" comment="data commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619976900499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="data commit">
+      <created>1619977080831</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619977080831</updated>
+    </task>
+    <task id="LOCAL-00004" summary="data commit">
+      <created>1619977099812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619977099812</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,11 +202,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hi this is peter" />
     <MESSAGE value="peter2" />
-    <option name="LAST_COMMIT_MESSAGE" value="peter2" />
+    <MESSAGE value="data commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="data commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
