@@ -16,7 +16,8 @@ class HashTable:
         bools = (np.dot(inp_vector, self.projections.T) > 0).astype('int')
         # The join function joins all items in a tuple into a string,
         # using a ''(empty) character as separator
-        return ''.join(bools.astype('str'))
+        # return ''.join(bools.astype('str'))
+        return ''.join(str(bools))
         # The resulting string is the hash value of size k (the bitwise hash value)
 
     def __setitem__(self, inp_vec, label):
