@@ -12,7 +12,6 @@ We plan to take advantage of the various third-party libraries of Python to impl
 ### Idea behind this method
 Consider a image dataset matrix `D` with `n` vectors of size `d`. This database `D` can be projected onto a lower dimensional space with `n` vectors of size `k` using a random projection matrix.
 ### Algorithm
-*From Resources 1 (please refer to the `Resources` section at the bottom of this `README.md`)!*
 We construct a table of all possible bins where each bin is made up of similar items. Each bin can be represented by a bitwise hash value so that two images with same bitwise hash values are more likely to be similar than those with different hashes.
 
 Steps to generate a bitwise hash table (this is our `hash_table.py`):
@@ -31,9 +30,11 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 `lsh.py` contains construction of multiple hash tables.
 
 ## Resources
-1. https://santhoshhari.github.io/Locality-Sensitive-Hashing/
-2. https://necromuralist.github.io/neural_networks/posts/image-to-vector/
-3. https://docs.python.org/3/tutorial/venv.html
-4. https://storage.googleapis.com/openimages/web/index.html
-5. https://www.iloveimg.com/resize-image
-
+1. https://santhoshhari.github.io/Locality-Sensitive-Hashing/ *lsh*
+2. https://necromuralist.github.io/neural_networks/posts/image-to-vector/ *image2vector*
+3. https://docs.python.org/3/tutorial/venv.html *venv*
+4. https://storage.googleapis.com/openimages/web/index.html *image database*
+5. https://www.iloveimg.com/resize-image *this is not used*
+6. http://unsample.net/ *image database*
+7. https://caesium.app/ *compress images*
+8. https://stackoverflow.com/questions/48121916/numpy-resize-rescale-image *cv2 resize*
