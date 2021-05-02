@@ -13,6 +13,6 @@ def load_images_from_folder(folder):
     return images
 
 images = load_images_from_folder(path)
-print(len(images))
-cv2.imshow('Testing...', images[29])
-cv2.waitKey()
+# print(len(images))
+# cv2.imshow('Testing...', images[29])
+# cv2.waitKey()
