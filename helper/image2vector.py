@@ -19,9 +19,8 @@ def image_to_vector(image: numpy.ndarray) -> numpy.ndarray:
     length, height, depth = image.shape
     return image.reshape((length * height * depth, 1))
 
-''' These are just example usage, not the code that we will use
-path = r'../data/profile.jpg'
+path = r'./data/profile.jpg'
 img = read_image(path)
 vector = image_to_vector(img)
 print(vector.shape)
-'''
+
