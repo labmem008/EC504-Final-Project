@@ -37,4 +37,5 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 5. https://www.iloveimg.com/resize-image
 6. http://unsample.net/
 7. https://caesium.app/
+8. https://stackoverflow.com/questions/48121916/numpy-resize-rescale-image
 
