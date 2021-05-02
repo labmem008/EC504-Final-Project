@@ -35,10 +35,19 @@ s = "Number of hash tables: " + str(num_tables)
 print(s)
 s = "Size of hash values: " + str(hash_size)
 print(s)
-query_numer = 31
-s = "The image ID that we want to search is image " + str(query_numer)
+
+query_numer = 0
+s = "../data/query/query-" + str(query_numer) + ".jpg"
+path = s
+query_image = cv2.imread(s)
+query_image_resized = cv2.resize(query_image, dsize=(image_size, image_size))
+# cv2.imshow('Testing...', query_image_resized)
+# cv2.waitKey()
+query_vector = image_to_vector(query_image_resized).T
+
+s = "The image ID that we want to search is query image " + str(query_numer)
 print(s)
-result = project.__getitem__(vectors[31])
+result = project.__getitem__(query_vector)
 print("The image IDs that are similar to the query image are:")
 print(result)
 
@@ -46,7 +55,7 @@ min_dist = int(sys.maxsize)
 min_index = -1
 
 for index in result:
-    dist = numpy.linalg.norm(vectors[31] - vectors[int(index)])
+    dist = numpy.linalg.norm(query_vector - vectors[int(index)])
     dist = round(dist, 2)
     if dist < min_dist:
         min_dist = dist
