@@ -36,4 +36,4 @@ In practise, the number of hash tables and size of the hash value `k` are tuned 
 4. https://storage.googleapis.com/openimages/web/index.html
 5. https://www.iloveimg.com/resize-image
 6. http://unsample.net/
-
+7. https://stackoverflow.com/questions/990754/how-to-leave-exit-deactivate-a-python-virtualenv
