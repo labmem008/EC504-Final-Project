@@ -23,7 +23,7 @@ def load_images_from_folder(folder):
 
 
 
-def lsh_final_function():
+def lsh_final_function(query_numer):
     path = str(pathlib.Path(__file__).parent.absolute().parent.absolute()) + '\data\set1'
     # path = r'../data/set1/'
     vectors = load_images_from_folder(path)
@@ -54,7 +54,7 @@ def lsh_final_function():
     # cv2.waitKey()
     query_vector = image_to_vector(query_image_resized).T
     '''
-    query_numer = 20
+    # query_numer = 20
     query_vector = vectors[query_numer]
 
     s = "The image ID that we want to search is query image " + str(query_numer)

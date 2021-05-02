@@ -18,7 +18,7 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 
 
-## Installation & Run
+## Installation & Run Instructions
 
 1. **pip install -r requirements.txt**
 
@@ -41,6 +41,42 @@ We plan to take advantage of the various third-party libraries of Python to impl
 - ##### helper functions
 
   folder 'helper' contains all the helper functions
+
+
+
+## Sample Results
+
+The first run is on LSH function. The run time illustrated for LSH is around 0.0248 seconds, with a correct output. The second run is on KD-tree function. The run time for KD-tree is around 0.02593 seconds. After testing for several times, we found the run time for LSH is slightly faster than that of KD-tree, given 30 datasets.
+
+```command
+---starting LSH now ---
+
+
+Number of hash tables: 4
+Size of hash values: 10
+The image ID that we want to search is query image 22
+The image IDs that are similar to the query image are:
+['18', '11', '22', '17']
+The ID of the nearest neighbor of the query image is 22 of distance 0.0
+Time spent: 0.02482891082763672
+---LSH ENDING ---
+
+
+---starting kd_tree now ---
+
+
+---Start image converting now---
+distant is [[0.]]
+estimate image index is [[22]]
+--- 0.025930166244506836 seconds ---
+---kd_tree ENDING ---
+
+
+
+Process finished with exit code 0
+
+
+```
 
 
 
