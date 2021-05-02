@@ -1,4 +1,5 @@
 # https://santhoshhari.github.io/Locality-Sensitive-Hashing/
+# I am afraid this file will not be used at all for this project. - Hanming
 class LSH:
     def __init__(self, num_tables, hash_size, inp_dimensions):
         self.num_tables = num_tables
