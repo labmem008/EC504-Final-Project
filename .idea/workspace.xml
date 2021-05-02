@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f78ea933-abca-4ba0-b959-d62cec21f0fa" name="Default Changelist" comment="hi this is peter">
-      <change afterPath="$PROJECT_DIR$/lsh/__initi__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsh/lsh_final.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kdtree/KD_Tree_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/kdtree/KD_Tree_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsh/main.py" beforeDir="false" />
-    </list>
+    <list default="true" id="f78ea933-abca-4ba0-b959-d62cec21f0fa" name="Default Changelist" comment="peter2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619975493763</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="peter2">
+      <created>1619976900499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619976900499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hi this is peter" />
-    <option name="LAST_COMMIT_MESSAGE" value="hi this is peter" />
+    <MESSAGE value="peter2" />
+    <option name="LAST_COMMIT_MESSAGE" value="peter2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
