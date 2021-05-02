@@ -1,5 +1,5 @@
 # https://santhoshhari.github.io/Locality-Sensitive-Hashing/
-import hash_table as ht
+from . import hash_table as ht
 
 class LSH:
     def __init__(self, num_tables, hash_size, inp_dimensions):

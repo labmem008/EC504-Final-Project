@@ -46,4 +46,4 @@ def KD_Tree_image(k, input_image_index):
 
 # path = str(pathlib.Path(__file__).parent.absolute().parent.absolute()) + '\data\set1\set1-'
 # print(path)
-KD_Tree_image(1, 21)
+# KD_Tree_image(1, 21)
