@@ -20,11 +20,15 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 ## Installation & Run Instructions
 
-###### In GitHub CLI
+###### Clone the code from GitHub
 
-1. Run this:
+1. Run this in GitHub CLI:
 
-gh repo clone labmem008/EC504-Final-Project
+   gh repo clone labmem008/EC504-Final-Project
+
+2. **OR** Run this in CMD:
+
+   git clone 'https://github.com/labmem008/EC504-Final-Project.git'
 
 ###### In root directory:
 
