@@ -33,7 +33,8 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 ###### In root directory:
 
-. Run this:
+1. Run this:
+
 
 `pip3 install -r requirements.txt`
 
