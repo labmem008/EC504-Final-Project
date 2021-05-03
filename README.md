@@ -26,6 +26,34 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 2. **python main.py**
 
+   
+
+### How to run each function Individually
+
+###### LSH
+
+1. Inside lsh/lsh_final.py, add the following line
+
+2. ```python
+   lsh_final_function(query_numer)
+   # query_number is the image index you want to search in the data base
+   ```
+
+3. python lsh/lsh_final.py
+
+###### KD-TREE
+
+1. Inside kdtree/KD_Tree_function.py, add the following line
+
+2. ```python
+   KD_Tree_image(1, 21)
+   # input KD_Tree_image(k, input_image_index)
+   # 'k' is the number of nearest neighbor you want to find
+   # 'input_image_index' is the index of the image you are trying to find match/matches for
+   ```
+
+3. python kdtree/KD_Tree_function
+
 
 
 ## File Distribution

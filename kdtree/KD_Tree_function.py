@@ -44,6 +44,4 @@ def KD_Tree_image(k, input_image_index):
     print("--- %s seconds ---" % (time.time() - start_time))
     # print(kdt.get_tree_stats())
 
-# path = str(pathlib.Path(__file__).parent.absolute().parent.absolute()) + '\data\set1\set1-'
-# print(path)
 # KD_Tree_image(1, 21)
