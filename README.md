@@ -19,7 +19,14 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 
 ## Installation & Run Instructions
-In root directory:
+
+###### In GitHub CLI
+
+1. Run this:
+
+gh repo clone labmem008/EC504-Final-Project
+
+###### In root directory:
 
 1. Run this:
 
