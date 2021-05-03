@@ -19,9 +19,13 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 
 ## Installation & Run Instructions
-In root directory:
+1. `cd` to root directory:
 
-1. Run this:
+`cd hita`
+
+`cd EC504-Final-Project`
+
+. Run this:
 
 `pip3 install -r requirements.txt`
 
