@@ -19,12 +19,15 @@ We plan to take advantage of the various third-party libraries of Python to impl
 
 
 ## Installation & Run Instructions
+In root directory:
 
-1. **pip install -r requirements.txt**
+1. Run this:
 
-   **pip3 install -r requirements.txt**
+`pip3 install -r requirements.txt`
 
-2. **python main.py**
+2. Run this:
+
+`python main.py`
 
    
 
