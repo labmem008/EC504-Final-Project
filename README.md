@@ -3,9 +3,9 @@
 
 
 ## Team information:
-Hanming Wang (hita@bu.edu) U29135433 scc-username: hita
+Hanming
 
-Yaopu Wang (yaopuw@bu.edu) U60843045 scc-username: yaopuw
+Yaopu
 
 
 
